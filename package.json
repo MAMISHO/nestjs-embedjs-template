@@ -21,14 +21,15 @@
         "test:e2e": "jest --config ./test/jest-e2e.json"
     },
     "dependencies": {
-        "@llmembed/embedjs": "^0.0.19",
+        "@llm-tools/embedjs": "0.0.76",
         "@nestjs/common": "^9.0.0",
         "@nestjs/core": "^9.0.0",
         "@nestjs/platform-express": "^9.0.0",
         "dotenv": "^16.3.1",
         "reflect-metadata": "^0.1.13",
         "rxjs": "^7.2.0",
-        "vectordb": "^0.1.8"
+        "vectordb": "^0.4.20",
+        "compute-cosine-similarity": "^1.1.0"
     },
     "devDependencies": {
         "@nestjs/cli": "^9.0.0",

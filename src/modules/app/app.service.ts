@@ -6,7 +6,11 @@ export class AppService {
     @Inject()
     private embedService: EmbedService;
 
-    getHello(): Promise<string> {
-        return this.embedService.query('Who is Adhityan?');
+    async getHello(): Promise<string> {
+        return (await this.embedService.query('Who is Adhityan?')).result;
+    }
+
+    async ask(question: string): Promise<string> {
+        return (await this.embedService.query(question)).result;
     }
 }
